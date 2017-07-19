@@ -32,7 +32,6 @@ namespace BagOLoot.Tests
             List <int> toys = _helper.GetChildsToys(childId);
 
             Assert.DoesNotContain(toyId, toys);
-
         }
     }
 }
