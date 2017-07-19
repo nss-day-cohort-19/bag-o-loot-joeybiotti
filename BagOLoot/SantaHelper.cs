@@ -12,6 +12,10 @@ namespace BagOLoot
         {
             return new List<int>(){4,6,7,8};
         }
+        public int RemoveToyFromBag(string toy, int child)
+        {
+            return 10;
+        }
     }
 
 }

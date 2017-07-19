@@ -22,5 +22,17 @@ namespace BagOLoot.Tests
 
             Assert.Contains(toyId, toys);
         }
+        
+        [Fact]
+        public void RemoveToyFromChildsBag()
+        {
+            string toyName ="Doll";
+            int childId = 123;
+            int toyId = _helper.RemoveToyFromBag(toyName, childId);
+            List <int> toys = _helper.GetChildsToys(childId);
+
+            Assert.DoesNotContain(toyId, toys);
+
+        }
     }
 }
