@@ -22,17 +22,19 @@ namespace BagOLoot.Tests
         }
 
         [Fact]
-        public bool ToyDeliveryStatus()
+        public void ToysSantaAlreadyDelievered()
         {
-            return true; 
+            int childId = 12012;
+            Assert.True(_santa.ToysDelievered(childId)); 
         }
 
         [Fact]
         public void YuletideReport()
         {
             int childId = 2314;
-            int toyId = 985;
-            List<int> report = _santa.RunYuletideReport(childId, toyId);
+            List<int> report = _santa.RunYuletideReport(childId);
+
+            Assert.IsType<List<int>>(report);
         }
     }
 }
