@@ -8,7 +8,13 @@ namespace BagOLoot
         {
             return new List<int>(){1,2,3};
         }
-        public List <int> RunYuletideReport(int childId, int toyId)
+
+        public bool ToysDelievered(int child)
+        {
+            return true;
+        }
+
+        public List <int> RunYuletideReport(int childId)
         {
             return new List<int>(){1,2,323,2323};
         }
