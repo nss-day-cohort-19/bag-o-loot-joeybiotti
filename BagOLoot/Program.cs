@@ -38,7 +38,7 @@ namespace BagOLoot
             if (choice == 2)
             {
                 Console.WriteLine("Assign toy to a child");
-                Console.Write("> "); 
+                Console.Write("> ");
             }
             //take toy away from kid
             if (choice == 3)
@@ -65,6 +65,11 @@ namespace BagOLoot
                 Console.Write("> ");
             }
 
+        }
+
+        private static SantaHelper GetGiveToy(SantaHelper giveToy)
+        {
+            return giveToy;
         }
     }
 }
